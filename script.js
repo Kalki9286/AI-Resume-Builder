@@ -13,3 +13,7 @@ document.getElementById("summary").addEventListener("input", function() {
 document.getElementById("education").addEventListener("input", function() {
     document.getElementById("preview-education").textContent = this.value;
 });
+
+document.getElementById("experience").addEventListener("input", function() {
+    document.getElementById("preview-experience").textContent = this.value;
+});
