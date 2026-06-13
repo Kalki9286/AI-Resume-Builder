@@ -17,3 +17,12 @@ document.getElementById("education").addEventListener("input", function() {
 document.getElementById("experience").addEventListener("input", function() {
     document.getElementById("preview-experience").textContent = this.value;
 });
+
+document.querySelector("form").addEventListener("submit", function(e) {
+    const name = document.getElementById("name").value;
+
+    if (name.trim() === "") {
+        alert("Please enter your name");
+        e.preventDefault();
+    }
+});
